@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+<body>
+
+    
+<h1>Javascript Test Console</h1>
+    <h2>Chris Buffalino</h2>
+
+<div id="o1">
+    <h3>Output 1</h3>
+    <p id="c1" style="height: auto"></p>
+</div>   
+
+    <div id="o2">
+<h3>Output 2</h3>
+    <p id="c2" style="height: auto"></p>
+</div>
+    
+<div id="o3">   
+<h3>Output 3</h3>
+    <p id="c3" style="height: auto"></p>
+</div> 
+    
+<div id="o4">    
+<h3>Output 4</h3>
+    <p id="c4" style="height: auto"></p>
+</div>   
+
+    <script>
+    var currentGen = 1;
+    var totalGen = 19;
+    var totalMW = 0;
+    var paragraph = document.createElement("p");
+    var element = document.getElementById("o1");
+    var element2 = document.getElementById("o2");
+
+    
+        
+    while (currentGen <= 4) {
+        o1.innerHTML += "Generator #" + currentGen + " is on, adding 62 MW, for a total of " + (totalMW += 62) + " MW!";
+        console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + (totalMW += 62) + " MW!");
+        element.appendChild(paragraph);
+        currentGen++;
+
+    }
+    for (var currentGen = 5; currentGen <= 15; currentGen++){
+        o2.innerHTML += "Generator #" + currentGen + " is on, adding 124 MW, for a total of " + (totalMW += 124) + " MW!";
+        console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + (totalMW += 124) + " MW!");
+        element2.appendChild(paragraph);
+    }
+        
+</script>
+
+</body>
+</html>
+
